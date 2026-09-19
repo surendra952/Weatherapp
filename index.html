@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast App</h1>
+            <button id="unitToggleBtn" class="unit-toggle-btn" title="Toggle °C / °F">°C</button>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name">
+            
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <!-- Feature 9: Location Button -->
+            <button id="locationBtn" class="location-btn" title="Use my current location">
+                📍
+            </button>
+        </div>
+
+        <!-- Feature 6: Recent Search History Chips -->
+        <div id="recentSearches" class="recent-searches"></div>
+
+        <div id="weatherResult">
+            <p>Weather information will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
